@@ -154,7 +154,7 @@ def receber_mensagem():
         return jsonify({"status": "ok"}), 200
     
     # Verifica se o chat_id corresponde ao ID do grupo desejado
-    if chat_id == GRUPO_ID_DESEJADO or chat_id == '5515991289083@s.whatsapp.net':
+    if chat_id == GRUPO_ID_DESEJADO:
         print('TEXTO: ', texto)
         historico = buscar_historico_conversa(chat_id, quantidade=5)
         resposta = gerar_resposta_com_modelo(texto, historico)
