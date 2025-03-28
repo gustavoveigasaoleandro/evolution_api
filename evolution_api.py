@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 import requests
 import subprocess
 import os
-from pyngrok import ngrok
 from langchain_ollama import OllamaLLM
 from datetime import datetime
 from dotenv import load_dotenv
